@@ -1,0 +1,35 @@
+{
+  "name": "secure-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app/server.js"
+  },
+  "author": "Shyju S",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-node6": "^11.0.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.1.1",
+    "jwt-simple": "^0.5.1",
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shyjues/api-secure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shyjues/api-secure/issues"
+  },
+  "homepage": "https://github.com/shyjues/api-secure#readme",
+  "description": ""
+}
