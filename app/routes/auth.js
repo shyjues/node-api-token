@@ -42,7 +42,7 @@ function login(req,res){
 
 // private method
 function genToken(user) {
-  var expires = expiresIn(7); // 7 days
+  var expires = expiresIn(); // in 1 minute
   var token = jwt.encode({
     exp: expires
   }, require('./secret')());
@@ -54,10 +54,10 @@ function genToken(user) {
   };
 }
 
-function expiresIn(numDays) {
-  var dateObj = new Date();
-  console.log('expires in '+dateObj.getTime());
-  return dateObj.setDate(dateObj.getDate() + numDays);
+//expires in 1 minute
+function expiresIn() {
+  
+  return (Date.now()+60000);
 }
 
 
