@@ -15,14 +15,12 @@ var findValuesforID = (id)=>{
   
     //   console.log(`content here is =${JSON.stringify(content)}`);
     // });
-    console.log(`values fetched from file for ${id}`)
-    console.log(JSON.stringify(content));
+
 
     var idvalue = _.find(content, function(userObj){
       return userObj.id==id;
     });
     if(idvalue){
-      console.log(idvalue);
       resolve(idvalue);
     }else{
       reject("Invalid ID");

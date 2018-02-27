@@ -46,3 +46,5 @@ app.use(function(req, res, next) {
 app.listen(4000, ()=>{
     console.info(`started at port: 4000`);
 });
+
+module.exports.app = app;
